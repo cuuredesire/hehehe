@@ -5,40 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For Sofia</title>
   <link rel="icon" type="image/png" href="favicon.png" />
- <style>
- .container {
-   display: flex;
-   flex-direction: row;
-   gap: 5px;
-   justify-content: center;
- }
- .image-row img {
-  width: 150px;
-  height: auto;
- }
-  p {
-    margin: 5px 0;
-  }
- </style>
+  <style>
+    body {
+      background-color: #400f16;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      font-size: 6vw; /* Scales with screen size */
+      color: #0a0203;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 3vw; /* Responsive text */
+      color: #0a0203;
+      margin: 10px 0;
+    }
+
+    .image-row {
+      display: flex;
+      flex-wrap: wrap; /* allows images to move to next line */
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .image-row img {
+      width: 150px;
+      max-width: 40vw; /* shrink if screen is smaller */
+      height: auto;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      p {
+        font-size: 4.5vw;
+      }
+
+      h1 {
+        font-size: 8vw;
+      }
+
+      .image-row img {
+        width: 90vw; /* Full width for mobile */
+      }
+    }
+  </style>
 </head>
-<body style="background-color:#400f16; color: white; padding: 20px; text-align: center;">
-  <h1 style="font-size:4vw; color: #0a0203;">Happy birthday baby &lt;3</h1>
-  <br>
-  <p style="font-size:2vw; color: #0a0203;">Hello my love, happy birthday!!!</p>
-  <p style="font-size:2vw; color: #0a0203;">I just wanted to say thank you so much for everything, i’m genuinely so grateful we met because I kinda have no clue what i’d do without you. You mean so much to me and I hope you know that. Every time we talk I get so freaking happy and I will admit I think of you all the time - I know you like to ask why, so let me ease your mind and answer before you can ask - well, it’s because I love you, thats why I think of you all the time and enjoy every time we talk 😋; as much as I say I hate fortnite (yk I only hate losing) I love playing it because I only play with you, and you make the game so much better. I looooooove talking to you even if we don’t have much to talk about sometimes. I love you so freaking much Sofia. I hope you have an amazing day today and I hope you get all the gifts u want 😛 have an amazing birthday darling !!</p>
-<img src="silly.jpg" alt="Silly1">
-<p style="font-size:2vw; color: #0a0203;">Do you like the silly kitty I added for u?</p>
-<p style="font-size:2vw; color: #0a0203;">Well here's more hehehe</p>
- <div class="image-row">
-  <img src="meow.jpg" alt="Silly2">
-  <img src="mow.jpg" alt="Silly3">
-  <p style="font-size:2vw; color: #0a0203;">Here's some dogs too</p>
-  <img src="dog.jpg" alt="Silly4">
-  <img src="dawg.jpg" alt="Silly5">
-  <p style="font-size:2vw; color: #0a0203;">And here's a birthday kitty</p>
-  <img src="bday.jpg" alt="Silly5">
-  <p style="font-size:2vw; color: #0a0203;">hugs</p>
-  <img src="bearhug.gif" alt="hugs" />
- </div>
+
+<body>
+  <h1>Happy birthday baby &lt;3</h1>
+
+  <p>Hello my love, happy birthday!!!</p>
+
+  <p>
+    I just wanted to say thank you so much for everything, i’m genuinely so
+    grateful we met because I kinda have no clue what i’d do without you. You
+    mean so much to me and I hope you know that. Every time we talk I get so
+    freaking happy and I will admit I think of you all the time - I know you
+    like to ask why, so let me ease your mind and answer before you can ask -
+    well, it’s because I love you, thats why I think of you all the time and
+    enjoy every time we talk 😋; as much as I say I hate fortnite (yk I only
+    hate losing) I love playing it because I only play with you, and you make
+    the game so much better. I looooooove talking to you even if we don’t have
+    much to talk about sometimes. I love you so freaking much Sofia. I hope you
+    have an amazing day today and I hope you get all the gifts u want 😛 have
+    an amazing birthday darling !!
+  </p>
+
+  <img src="silly.jpg" alt="Silly1">
+
+  <p>Do you like the silly kitty I added for u?</p>
+  <p>Well here's more hehehe</p>
+
+  <div class="image-row">
+    <img src="meow.jpg" alt="Silly2">
+    <img src="mow.jpg" alt="Silly3">
+  </div>
+
+  <p>Here's some dogs too</p>
+  <div class="image-row">
+    <img src="dog.jpg" alt="Silly4">
+    <img src="dawg.jpg" alt="Silly5">
+  </div>
+
+  <p>And here's a birthday kitty</p>
+  <div class="image-row">
+    <img src="bday.jpg" alt="Birthday Kitty">
+  </div>
+
+  <p>hugs</p>
+  <div class="image-row">
+    <img src="bearhug.gif" alt="Hugs" />
+  </div>
 </body>
 </html>
